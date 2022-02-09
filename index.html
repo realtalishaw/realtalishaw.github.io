@@ -1,76 +1,196 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="pastel">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Talisha White</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    .header {
+        background-image: url("images/talisha.gif");
+        background-size: cover;
+     
+    }
+</style>
 
-  </head>
-  <body>
+<body>
 
-<main class="dark:bg-gray-800  bg-white relative overflow-hidden h-screen">
-    
-    <header class="h-24 sm:h-32 flex items-center z-30 w-full">
-        <div class="container mx-auto px-6 flex items-center justify-between">
-            <div class="uppercase text-gray-800 dark:text-white font-black text-3xl flex items-center">
-                <svg width="25" height="25" viewBox="0 0 1792 1792" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z">
-                    </path>
-                </svg>
-                <span class="text-xs ml-3 mt-1">
-                   hello@talishawhite.com
-                </span>
-            </div>
-            <div class="flex items-center">
-                <nav class="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden">
-                    <a href="/startups.html" class="py-2 px-6 flex hover:text-black">
-                       Startups
-                    </a>
-                    <a href="#" class="py-2 px-6 flex hover:text-black">
-                        Pageantry
-                    </a>
-                    <a href="#" class="py-2 px-6 flex hover:text-black">
-                        Fashion
-                    </a>
-                    <a href="#" class="py-2 px-6 flex hover:text-black">
-                        Blog
-                    </a>
-                </nav>
-                <button class="lg:hidden flex flex-col ml-4">
-                    <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
-                    </span>
-                    <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
-                    </span>
-                    <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
-                    </span>
-                </button>
-            </div>
-        </div>
-    </header>
-    <div class="flex relative z-20 items-center">
-        <div class="container mx-auto px-6 flex flex-col justify-between items-center relative py-4">
-            <div class="flex flex-col">
-                <img src="/images/talisha-headshot.jpg" class="rounded-full w-28 mx-auto"/>
-                <p class="text-3xl my-6 text-center dark:text-white">
-                    Hi, I&#x27;m Talisha 👑
-                </p>
-                <h2 class="max-w-3xl text-5xl md:text-6xl font-bold mx-auto dark:text-white text-gray-800 text-center py-2">
-                    Software Engineer, Pageant Queen, Fashion Designer & Founder.
-                </h2>
-                <div class="flex items-center justify-center mt-4">
-                    <a href="#" class="uppercase py-2 my-2 px-4 btn btn-secondary btn-outline">
-                        CONNECT WITH ME
-                    </a>
+    <section class="bg-purple-500 pb-24 header">
+
+        <div class="container px-4 mx-auto">
+            <nav class="relative flex justify-between items-center py-8" data-config-id="toggle-mobile"
+                data-config-target=".navbar-menu" data-config-class="hidden">
+                <a class="text-gray-600 text-2xl leading-none" href="#" data-config-id="brand">
+                    <img class="h-8" src="plain-assets/logos/plain-light.svg" alt="" width="auto">
+                </a>
+                <div class="lg:hidden">
+                    <button class="block navbar-burger text-purple-50 hover:text-purple-200 focus:outline-none">
+                        <svg class="h-4 w-4" fill="currentColor " viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                            data-config-id="auto-svg-1-6">
+                            <title>Mobile menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <ul
+                    class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex ml-auto mr-auto items-center w-auto space-x-12">
+                    <li><a class="text-sm text-purple-50 hover:text-purple-200 font-medium" href="/about.html"
+                            data-config-id="link1">About</a></li>
+                    <li><a class="text-sm text-purple-50 hover:text-purple-200 font-medium" href="/tech.html"
+                            data-config-id="link2">Tech</a></li>
+                    <li><a class="text-sm text-purple-50 hover:text-purple-200 font-medium" href="/pageants.html"
+                            data-config-id="link3">Pageantry</a></li>
+                    <li><a class="text-sm text-purple-50 hover:text-purple-200 font-medium" href="/fashion.html"
+                            data-config-id="link4">Fashion</a></li>
+                            <li><a class="text-sm text-purple-50 hover:text-purple-200 font-medium" href="/blog.html"
+                                data-config-id="link4">Blog</a></li>
+                </ul>
+           
+            </nav>
+            <div class="mt-16">
+                <div class="container px-4 mx-auto">
+                    <div class="max-w-xl lg:max-w-4xl mx-auto text-center mb-16">
+                        <span class="text-xs font-semibold text-purple-50 uppercase" data-config-id="label">Talisha White</span>
+                        <h2 class="mb-8 mt-2 text-white text-3xl leading-tight md:text-4xl md:leading-tight lg:text-6xl lg:leading-tight font-bold font-heading"
+                            data-config-id="header">Software Engineer, Pageant Queen, Fashion Designer & Founder.</h2>
+                        <div><a class="block md:inline-block px-5 py-3 md:mr-3 mb-3 md:mb-0 text-sm text-center bg-white hover:bg-purple-50 text-purple-500 font-semibold border border-white hover:border-purple-50 rounded transition duration-200"
+                                href="/contact.html" data-config-id="hero-primary-action">Connect With Me</a></div>
+                    </div>
+                    <div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
+        <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50" data-config-id="toggle-mobile-2"
+            data-config-target=".navbar-menu" data-config-class="hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+            <nav class="relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto">
+                <div class="flex items-center mb-12">
+                    <a class="mr-auto text-2xl font-semibold leading-none" href="#" data-config-id="brand">
+                        <img class="h-8" src="plain-assets/logos/plain-purple.svg" alt="" width="auto">
+                    </a>
+                    <button class="navbar-close">
+                        <svg class="h-6 w-6 cursor-pointer hover:text-purple-500" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewbox="0 0 24 24" stroke="currentColor" data-config-id="auto-svg-2-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul>
+                        <li class="mb-1"><a
+                                class="block p-4 text-sm font-semibold hover:bg-purple-50 hover:text-purple-500 rounded"
+                                href="#" data-config-id="link1">About</a></li>
+                        <li class="mb-1"><a
+                                class="block p-4 text-sm font-semibold hover:bg-purple-50 hover:text-purple-500 rounded"
+                                href="#" data-config-id="link2">Company</a></li>
+                        <li class="mb-1"><a
+                                class="block p-4 text-sm font-semibold hover:bg-purple-50 hover:text-purple-500 rounded"
+                                href="#" data-config-id="link3">Services</a></li>
+                        <li class="mb-1"><a
+                                class="block p-4 text-sm font-semibold hover:bg-purple-50 hover:text-purple-500 rounded"
+                                href="#" data-config-id="link4">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="mt-auto">
+                    <div class="pt-6"><a
+                            class="block px-5 py-3 mb-3 text-sm text-center bg-purple-500 hover:bg-purple-600 text-white font-semibold border border-purple-500 hover:border-purple-600 rounded transition duration-200"
+                            href="#" data-config-id="secondary-action">Sign in</a><a
+                            class="block px-5 py-3 text-sm text-center font-semibold text-purple-500 hover:text-white hover:bg-purple-500 border border-purple-500 hover:border-purple-600 rounded transition duration-200"
+                            href="#" data-config-id="primary-action">Sign up</a></div>
+                    <p class="mt-6 mb-4 text-sm text-center text-gray-500">
+                        <span data-config-id="copy">&copy; 2022 All rights reserved.</span>
+                    </p>
+                </div>
+            </nav>
+        </div>
+    </section>
 
-	<script src="index.js"></script>
-  </body>
+
+    
+<section class="py-20">
+    <div class="container px-4 mx-auto">
+     
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full lg:w-1/2 p-4">
+          <img class="w-full h-80 object-cover rounded-lg" src="images/122032687_3737720822907492_7179540814032675827_n.jpg" alt="" data-config-id="image1">
+        </div>
+        <div class="w-full lg:w-1/2 p-4">
+          <img class="w-full h-80 object-cover rounded-lg" src="images/117339488_10222720597260381_2699890156233635389_n.jpg" alt="" data-config-id="image2">
+        </div>
+        <div class="w-full md:w-1/3 p-4">
+          <img class="w-full h-80 object-cover rounded-lg" src="images/19260307_10155978178067427_5182140068614500397_n.jpg" alt="" data-config-id="image3">
+        </div>
+        <div class="w-full md:w-1/3 p-4">
+          <img class="w-full h-80 object-cover rounded-lg" src="images/60472812.jpeg" alt="" data-config-id="image4">
+        </div>
+        <div class="w-full md:w-1/3 p-4">
+          <img class="w-full h-80 object-cover rounded-lg" src="images/69289147_3453544337992915_7335125244677455872_n.jpg" alt="" data-config-id="image5">
+        </div>
+        <div class="w-full lg:w-1/2 p-4">
+          <img class="w-full h-80 object-cover rounded-lg" src="images/KDS51EHIGOVirgin-Main.jpeg" alt="" data-config-id="04_image6">
+        </div>
+        <div class="w-full lg:w-1/2 p-4">
+          <img class="w-full h-80 object-cover rounded-lg" src="images/89042728_3095218310491083_4218777904768614400_n.jpg" alt="" data-config-id="04_image7">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <footer class="py-20">
+        <div class="container px-4 mx-auto text-center">
+            <a class="inline-block mx-auto text-gray-600 text-2xl leading-none" href="#" data-config-id="brand">
+                <img class="h-8" src="plain-assets/logos/plain-purple.svg" alt="" width="auto">
+            </a>
+            <ul class="my-6 flex flex-wrap items-center justify-center">
+                <li class="mb-2 md:mb-0 mx-4"><a class="text-sm hover:text-purple-700 font-medium" href="/about.html"
+                        data-config-id="01_link1">About</a></li>
+                <li class="mb-2 md:mb-0 mx-4"><a class="text-sm hover:text-purple-700 font-medium" href="/tech.html"
+                        data-config-id="01_link2">Tech</a></li>
+                <li class="mb-2 md:mb-0 mx-4"><a class="text-sm hover:text-purple-700 font-medium" href="/pageantry.html"
+                        data-config-id="01_link3">Pageantry</a></li>
+                <li class="mb-2 md:mb-0 mx-4"><a class="text-sm hover:text-purple-700 font-medium" href="/fashion.html"
+                        data-config-id="01_link4">Fashion</a></li>
+                        <li class="mb-2 md:mb-0 mx-4"><a class="text-sm hover:text-purple-700 font-medium" href="/blog.html"
+                            data-config-id="01_link4">Blog</a></li>
+                            <li class="mb-2 md:mb-0 mx-4"><a class="text-sm hover:text-purple-700 font-medium" href="/contact.html"
+                                data-config-id="01_link4">Contact</a></li>
+            </ul>
+            <div>
+                <a class="inline-block mr-2 lg:mr-10" href="https://www.facebook.com/talisha.white1">
+                    <img src="https://img.icons8.com/color/50/000000/facebook-new.png" data-config-id="auto-img-1">
+                </a>
+                <a class="inline-block mr-2 lg:mr-10" href="https://twitter.com/realtalishaw">
+                    <img src="https://img.icons8.com/color/48/000000/twitter--v2.png"/>
+                </a>
+                <a class="inline-block mr-2 lg:mr-10" href="https://github.com/realtalishaw">
+                    <img src="https://img.icons8.com/windows/48/000000/github.png"/>
+                </a>
+                <a class="inline-block mr-2 lg:mr-10" href="https://www.instagram.com/realtalishaw/">
+                    <img src="https://img.icons8.com/color/48/000000/instagram-new--v2.png"/>
+                </a>
+                <a class="inline-block" href="https://www.linkedin.com/in/talisha-white/">
+                    <img src="https://img.icons8.com/color/48/000000/linkedin.png"/>
+                </a>
+            </div>
+        </div>
+        <div class="mt-12 mb-8 border-b"></div>
+        <div class="container px-4 mx-auto">
+            <p class="text-center text-sm text-gray-500" data-config-id="copy">All rights reserved. &copy; Talisha White, LLC.
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+
 </html>
